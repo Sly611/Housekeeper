@@ -27,27 +27,27 @@ while True:
 
             if media["type"] == "photo":
                 modal.add_label(text=f"New image downloaded - Move to Pictures or create new folder?", x=10, y=10)
-                yes_button = modal.add_button(text="  Yes  ", x=340, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
+                yes_button = modal.add_button(text="  Yes  ", x=330, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
                 new_button = modal.add_button(text="  New  ", x=380, y=55, command=lambda: new_button_command(modal, yes_button, new_button, media))
             elif media["type"] == "video":
                 print(media["type"])                
                 modal.add_label(text=f"new video downloaded /nMove to Videos or create new folder? ", x=5, y=5)
-                yes_button = modal.add_button(text="  Yes  ", x=340, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
+                yes_button = modal.add_button(text="  Yes  ", x=330, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
                 new_button = modal.add_button(text="  New  ", x=380, y=55, command=lambda: new_button_command(modal, yes_button, new_button, media))
 
             elif media["type"] == "music":
                 modal.add_label(text=f"new music downloaded /nMove to Musics or create new folder? ", x=5, y=5)
-                yes_button = modal.add_button(text="  Yes  ", x=340, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
+                yes_button = modal.add_button(text="  Yes  ", x=330, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
                 new_button = modal.add_button(text="  New  ", x=380, y=55, command=lambda: new_button_command(modal, yes_button, new_button, media))
 
             elif media["type"] == "document":
                 modal.add_label(text=f"new document downloaded /nMove to Documents or create new folder? ", x=5, y=5)
-                yes_button = modal.add_button(text="  Yes  ", x=340, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
+                yes_button = modal.add_button(text="  Yes  ", x=330, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
                 new_button = modal.add_button(text="  New  ", x=380, y=55, command=lambda: new_button_command(modal, yes_button, new_button, media))
 
             else:
                 modal.add_label(text=f"new unknown file downloaded /nMove to Recycle bin or create new folder? ", x=5, y=5)
-                yes_button = modal.add_button(text="  Yes  ", x=340, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
+                yes_button = modal.add_button(text="  Yes  ", x=330, y=55, command=lambda: yes_button_command(modal, media["type"], media["payload"]))
                 new_button = modal.add_button(text="  New  ", x=380, y=55, command=lambda: new_button_command(modal, yes_button, new_button, media))
 
         # update the downloads to the latest state
